@@ -12,13 +12,12 @@ const Nav: React.FC = () => {
            border-r-[1px]
            border-black
            fixed
-           mixBlend
-           bg-alphaWhite
+           bg-alphaBlack
            top-0
            left-0
-           text-black
+           text-bgColor
+           backdrop-blur-sm
            z-[9000]
-           font-normal
            ">
             <MenuBtn />
             <NavText text='— front-end —' />
@@ -87,7 +86,7 @@ const MenuLine: React.FC<menuLineWidh> = ({ height }) => {
           <div className={`
           w-full
           ${height}
-          bg-black
+          bg-bgColor
           `}
           >
 

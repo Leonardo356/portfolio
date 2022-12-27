@@ -19,7 +19,7 @@ const TransitionSection: React.FC<transitionProps> = ({ title, containerClass, p
                 trigger: `.${containerClass}`,
                 scrub: 1,
                 start: 'start start',
-                end: () => '+=' + window.innerWidth*2,
+                end: () => '+=' + window.innerWidth*3,
             },
         });
 

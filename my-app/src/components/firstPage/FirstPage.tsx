@@ -2,46 +2,50 @@ import React from "react";
 import './FirstPage.css'
 
 const FirstPage: React.FC = () => {
+    
     return(
         <>
            <div
            className="
            w-screen
            h-screen
-           firstPage
            pl-[5rem]
            flex
-           flex-col
            justify-center
            items-center
-           py-[1rem]
            relative
-           font-bold
            ">
-              <TextFirstPage />
+            <FirstPageText />
            </div>
         </>
     );
 };
 
-const TextFirstPage: React.FC = () => {
+const FirstPageText: React.FC = () => {
     return(
         <>
            <div className="
-           absolute
-           w-max
-           px-[1rem]
-           overflow-hidden
-           h-max
-           text-[6vmax]
+           text-[8vmax]
            flex
+           gap-[1rem]
            flex-col
-           z-[200]
-           gap-[3rem]
+           px-[1rem]
+           text-black
+           w-max
+           h-max
+           italic
            ">
-            <div>I'm Leonardo</div> 
-            <div>Front-end</div>
-            <div>Developer</div>
+             <div className="text-[1.6rem] mr-auto">{'<h1>'}</div>
+             <div className=" flex gap-[2rem] ml-auto">
+               <div className="-rotate-[10deg] font-bold text-[4vmax]">Hi!</div> <div>I'm Leonardo</div>
+             </div>
+             <div className="flex w-max mr-auto">
+                <div>Front - end</div>
+             </div>
+             <div className=" ml-auto flex">
+                <div>Developer...</div>
+             </div>
+             <div className="text-[1.6rem] mr-auto">{'</h1>'}</div>
            </div>
         </>
     );

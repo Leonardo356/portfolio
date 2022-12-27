@@ -22,7 +22,7 @@ const App: React.FC = () => {
                 scrub: 1,
                 invalidateOnRefresh: true,
                 pin: true,
-                start: 'center center',
+                start: 'start start',
                 end: () => "+=" + container!.offsetWidth
               },
             });

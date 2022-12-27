@@ -1,6 +1,8 @@
 import React from "react";
 import FirstPage from "../components/firstPage/FirstPage";
+import SkillsPage from "../components/SkillsPage/Skills";
 import TransitionSection from "../components/transitionComp/TransitionSection";
+import WorkPage from "../components/WorkPage/WorkPage";
 
 const Content: React.FC = () => {
 
@@ -13,11 +15,20 @@ const Content: React.FC = () => {
         contentPage
         ">
             <FirstPage />
+
             <TransitionSection 
             containerClass="skillsContainer"
             parentTextClass="skillsParent"
             title="Skills" />
-            <div className="w-screen h-screen"></div>
+
+            <SkillsPage />
+
+            <TransitionSection 
+            containerClass="workContainer"
+            parentTextClass="workParent"
+            title="Work" />
+            
+            <WorkPage />
         </div>
         </>
     );

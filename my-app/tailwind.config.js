@@ -10,11 +10,15 @@ module.exports = {
         colorShape1: '#FCA17D',
         colorShape2: '#DA627D',
         black: '#222423',
-        alphaWhite: 'rgba(255, 255, 255,90%)',
+        alphaBlack: 'rgba(0,0,0,75%)',
       },
 
       boxShadow: {
         sh1: 'rgba(0, 0, 0, 0.45) 0px 25px 20px -20px'
+      },
+
+      animation: {
+        spin: 'spin 10s linear infinite'
       },
     },
   },
